@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./email/background.png");
+}
+
+.header{
+max-width: 600px;
+max-height: 600px;
+position: relative;
+margin: auto;
+}
+    
+.text {
+max-width: 600px;
+color: #1d0606;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+text-align: center;
+background-color: beige;
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active {
+background-color: #717171;
+}
+
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+
+.middle{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align: center;
+    margin: auto;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 100px;
+    max-height: 100px;
+    animation: 2s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        background-color: rgb(175, 1,1)
+    }
+    50% {
+        background-color: rgb(0, 24,242)
+    }
+    100% {
+        background-color: rgb(77, 202,111)
+    }
+}
+
+.middle h1{
+    animation: 2s linear infinite sale_text; 
+}
+
+@keyframes sale_text{
+    0%{
+        font-size: 50px;
+    }
+    
+    50%{
+        font-size: 60px;
+    }
+    
+    100%{
+        font-size: 70px;
+    }
+
+}
+
+.products{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.products img{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.products button{
+    animation: 2s linear infinite condemned_blink_effect;
+}
+.footer{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-height: 300px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+    <div class="mySlides fade">
+        
+        <img src="./email/dress4.jpg" style="width:100%">
+        <div class="text">You can have anything you want in life if you dress for it.</div>
+    </div>
+    
+    <div class="mySlides fade">
+       
+        <img src="./email/dress2.jpg" style="width:100%">
+        <div class="text">Style is a way to say who you are without having to speak.</div>
+    </div>
+    
+    <div class="mySlides fade">
+        
+        <img src="./email/dress3.jpg" style="width:100%">
+        <div class="text">Clothes mean nothing until someone lives in them.</div>
+    </div>
+    
+</div>
+    <br>
+    
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+<div class="middle">
+   <h1>UPTO 70% OFF</h1>
+</div>
+
+<div class="products">
+    <div class="products_img">
+        <span>
+            <img src="./email/dress1.jpg" alt="women dress">
+            <p>Price: <s>$400</s> $200</p>
+            <button><a href="https://www.google.com/" target="_blank"><strong>BUY NOW</strong></a></button>
+        </span>
+    </div>
+    <div class="products_img">
+        <span>
+            <img src="./email/dress5.jg.jpg" alt="women dress">
+            <p>Price: <s>$400</s> $200</p>
+            <button><a href="https://www.google.com/" target="_blank"><strong>BUY NOW</strong></a></button>
+        </span>
+    </div>
+    <div class="products_img">
+        <span>
+            <img src="./email/dress6.jpg" alt="women dress">
+            <p>Price: <s>$400</s> $200</p>
+            <button><a href="https://www.google.com/" target="_blank"><strong>BUY NOW</strong></a></button>
+        </span>
+    </div>
+    <div class="products_img">
+        <span>
+            <img src="./email/dress7.jpg" alt="women dress">
+            <p>Price: <s>$400</s> $200</p>
+            <button><a href="https://www.google.com/" target="_blank"><strong>BUY NOW</strong></a></button>
+        </span>
+    </div>
+    <div class="footer">
+            <p>For More Information. <strong><a href="https://www.google.com/" target="_blank">CLICK HERE</a></strong></p>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+    
+</body>
+</html>
